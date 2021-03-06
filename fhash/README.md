@@ -23,9 +23,8 @@ For example, here's how you'd take the sha3 hash, with a message size of 256, an
 
 Not awful, but a little cumbersome
 
-So this is my attempt to make a tool in the middle of those. My main goal for this tool is that
-it can serve as an educational resource for those learning how to make command line tools with
-Python and how to use hash functions. And for making it easy to pipe hashes to other programs.
+So this is my attempt to make a tool in the middle of those. Hopefully someone could learn something
+from it too, since it was pretty easy to write.
 
 All libraries are in the Python Standard Library, all you need is Python 3, no other dependencies!
 
@@ -77,8 +76,8 @@ Use '-h' '--help' to see the list of flags and how to use them. If you have sugg
 to improve the help menu to make the tool easier to understand, please submit a pull request or
 open an issue!
 
-Don't run the script itself as administrator by the way, this sometimes messes things up when opening files
+Don't run the script itself as administrator by the way, this sometimes messes things up when 
+opening files. If you must, copy the file and change it's permissions.
 
 
 Any and all contributors welcome. Please just make sure any edits are compliant with PEP8.<br> 
-I highly recommend this tool for editing: https://github.com/coala/coala
