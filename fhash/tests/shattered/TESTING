@@ -1,0 +1,10 @@
+These files should yield the same sha1 hash value
+
+To test run
+
+`fhash.py sha1 -i shattered-1.pdf`
+`fhash.py sha1 -i shattered-2.pdf`
+
+You should get: 38762cf7f55934b34d179ae6a4c80cadccbb7f0a
+
+From: http://shattered.io/
