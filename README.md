@@ -1,6 +1,6 @@
 # scripts and tools
 
-## A collection of python stuff I wrote to make my life marginally easier
+## A collection of small tools and stuff I wrote to make my life marginally easier
 
 ### Programs so far
 * fhash - inutitive CLI for hashing files
