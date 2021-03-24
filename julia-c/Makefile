@@ -1,4 +1,4 @@
 julia:
-	gcc julia.c -lm -L. -o julia 
+	gcc julia.c -lm -Lstb/ -o julia 
 clean:
 	rm -f julia 
