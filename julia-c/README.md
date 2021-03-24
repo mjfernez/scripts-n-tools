@@ -1,9 +1,9 @@
 # julia.c
 
-### Simple CLI for efficient Julia Set fractal parsing in C
+### Simple CLI for efficient Julia Set fractal rendering in C
 
 The motivation for this tool was to improve upon my earlier Julia Set code 
-with a cleaner web app interface. But usingPython/numpy/PIL as the driver for 
+with a cleaner web app interface. But using Python/numpy/PIL as the driver for 
 image rendering was just too slow. This is supposed to be a better driver program 
 meant to be lightweight, and easy to be called from another application with 
 not-so complicated syntax. 
