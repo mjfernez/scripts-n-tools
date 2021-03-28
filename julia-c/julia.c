@@ -35,7 +35,6 @@ const char *FUNCTION_LIST[16] = { "acos" , "acosh" , "asin" , "asinh", "atan" , 
         "cos" , "cosh" , "exp" , "log" , "sin" , "sinh" , "sqrt" , "tan" , "tanh" , "pow" };
 const int RGB_MODE = 3; // I don't care about transparency, so we go for 8 bit channel
 const int FSIZE = 10; // 10 is the max function size (acosh^9999, or acosh^1.125).
-const double EPSILON = 0.000025; // for accounting for rounding error
 
 typedef struct {
         uint8_t R;
@@ -105,7 +104,7 @@ int julia(char f[FSIZE], double complex z, double complex c, int d) {
         int ic = 0; // iteration count
         
         while (ic < d){
-                if (cabs(z) > 2); // this is arbitrary 
+                if (cabs(z) > 2) // this is arbitrary 
                        break;     // the rationale is that the function is complex
                                   // so in certain spots it will be cyclical
                                   // and bounded under ~1 or ~2
@@ -162,7 +161,6 @@ int write_image(char f[FSIZE], double complex seed, int r[2], int depth, double 
                         x = bounds[0];
                         // increment  vertical
                         y += dy/((double) r[1]);
-                        fprintf(stderr, "x: %5f, y: %5f p: %d\n", x, y, cur_pixel);
                 }
                 double complex z = x + y * I;
                 int out = julia(f, z, seed, depth);
