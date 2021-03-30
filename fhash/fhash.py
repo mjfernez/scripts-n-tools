@@ -1,29 +1,22 @@
 #!/usr/bin/python3
 """
 fhash is a simple python tool for generating, passing and formatting hash
-values. It can be used to print hashes of strings or files in various formats
+values. It can be used to print hashes of strings or files in various FORMATS
 including as a hex string (lower and uppercase), binary string, or decimal
 number. It can also be used for testing the speed of these various functions
 
 """
-# OS/filesystem
 import os
 import sys
 import locale
-
-# Hash functions
 import hashlib
-
-# CLI tool
 import argparse
-
-#IO and time
 import time
 
 # Defines the basic options and constants used
-algos = ['md5', 'sha1', 'sha2', 'sha3']
-modes = [224, 256, 384, 512]
-formats = ['lowercase', 'uppercase', 'binary', 'decimal']
+ALGOS = ['md5', 'sha1', 'sha2', 'sha3']
+SIZES = [224, 256, 384, 512]
+FORMATS = ['lowercase', 'uppercase', 'binary', 'decimal']
 os_encoding = locale.getpreferredencoding()
 
 # For sha256 and sha3 only
@@ -47,8 +40,8 @@ def check_function(func, size):
     @size: the desired length of the output. i.e. sha256
             outputs a message of 256 bits or 64 hex-digits
     """
-    if (func in algos[0:2]):
-        bsize = 160 if (algos.index(func)) else 128
+    if (func in ALGOS[0:2]):
+        bsize = 160 if (ALGOS.index(func)) else 128
         if (size == None):
             v_print('Using default message size of \
                     {} bits'.format(bsize))
@@ -61,7 +54,7 @@ def check_function(func, size):
         if (size == None):
             v_print('Using default message size, 256-bits')
             return DEFAULT_SIZE
-        elif (size not in modes):
+        elif (size not in SIZES):
             print('Error: Message size must be  \
             224, 256, 384, or 512 for {}'.format(func))
             sys.exit()
@@ -71,7 +64,7 @@ def check_function(func, size):
 
 
 def format_output(msg, fmt):
-    """Formats the hash value according to the user's choice
+    """FORMATS the hash value according to the user's choice
     @msg: the string to be formatted
     @fmt: the target format
     """
@@ -162,8 +155,8 @@ def get_options(args=sys.argv[1:]):
                         help='Message length in bytes 224, 256, 384, 512 '
                         '(only valid for sha 2 and 3).')
     parser.add_argument('-f', '--format',
-                        choices=formats,
-                        default=formats[0],
+                        choices=FORMATS,
+                        default=FORMATS[0],
                         help='Formatting for the output')
     parser.add_argument('-v', '--verbose',
                         action='store_true',
@@ -171,7 +164,7 @@ def get_options(args=sys.argv[1:]):
                         output. Without this flag, the program will just \
                         print the hash')
     parser.add_argument('function',
-                        choices=algos,
+                        choices=ALGOS,
                         help='Use the specified hash function')
 
     return parser.parse_args(args)

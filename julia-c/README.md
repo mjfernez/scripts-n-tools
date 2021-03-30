@@ -39,7 +39,7 @@ simplifications and subtractions. Supported arguments are:
 
 All functions can optionally be appended with a number (up to and including 9999) 
 to raise them to a power, with '^'. As an example: `pow^3`, is "z^3. Decimal powers are
-also usable, such as `cos^.5` as long as it's less than 4 digits. You can optionally 
+also usable, such as `cos^.5` as long as it's less than 4 characters. You can optionally 
 just pass any string to get the default z^2 Julia Sets for example, `./julia nil ...`
 
 The executable was compiled on Debian sid so it won't work on Windows, or certain other

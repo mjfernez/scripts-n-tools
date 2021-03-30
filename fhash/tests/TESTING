@@ -1,3 +1,10 @@
+## **Run `python run_tests.py` to test all files**
+
+All hashes verified with openssl in hashes.json
+
+## Bonus
+Shattered test
+(mostly for fun)
 These files should yield the same sha1 hash value
 
 To test run
