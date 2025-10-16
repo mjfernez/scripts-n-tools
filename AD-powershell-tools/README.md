@@ -1,1 +1,1 @@
-Some useful AD scripts I use
+Some AD convenience scripts
