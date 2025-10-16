@@ -5,9 +5,8 @@ bit2pass.py - grabs the bare minimum info from a bitwarden JSON export
 your entry and gave it a password, otherwise, this script will yell at
 you.
 
-This does NOT grab notes or usernames. I find that in pass to be kind of
-useless since I rarely need to copy them. I use it purely for easy (and
-secure) copying of passwords. If a really need the notes, it's probably
+This does NOT grab notes or usernames. I use pass purely for easy (and
+secure) copying of passwords. If I really need the notes, it's probably
 not something I'm going to be copying much. I also exclude anything
 that's not a login because, well that's what bitwarden's good for...
 Don't limit yourself to one tool

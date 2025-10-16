@@ -5,5 +5,8 @@
 ### Programs so far
 * fhash - intuitive CLI for hashing files
 * xls2csv - converts old excel files into a csv format without having to use Excel
-* julia-c - C-based CLI for efficient julia set image rendering because python was too slow.  
+* julia-c - C-based CLI for efficient julia set image rendering because python was too slow.
+* AD-powershell-tools - Convenience scripts for managing AD users mostly
+* bitwarden-tools - script to dump bitwarden exports to UNIX pass before I realized Bitwarden had a CLI
+* discord - Discord alerting scripts
 
