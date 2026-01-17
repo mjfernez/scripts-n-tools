@@ -103,8 +103,17 @@ pods\
 
 Only ".png" and ".jpg" extentions are allowed since I'm lazy.
 
-
 ## Hacking
+
+### Video format
+
+This script produces and mp4 file by default since it is decent for web embedding. If you want a different video output, just change line 45
+
+```pwsh
+$OutputVideo = "$Title.mp4"
+```
+
+### Accuracy
 
 WhisperX is still fairly new and actively developed, so do not expect
 perfect transcription results. For example, you may find a number of
@@ -128,4 +137,3 @@ sure to include the backtick ` at the end)
 ```pwsh
 --initial_prompt "Names in this broadcast include: Mike Fernèz, Mr. McGuire" `
 ```
-

@@ -42,7 +42,7 @@ whisperx `
 # -----------------------------
 # Create subtitled video
 # -----------------------------
-$OutputVideo = "$Title.mkv"
+$OutputVideo = "$Title.mp4"
 
 $Image = @()
 if (Test-Path "$Title.jpg") {
