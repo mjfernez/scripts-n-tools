@@ -103,6 +103,10 @@ pods\
 
 Only ".png" and ".jpg" extentions are allowed since I'm lazy.
 
+### Sample output
+
+https://github.com/user-attachments/assets/c9a8b408-b48b-464a-b386-1eed8a5184c2
+
 ## Hacking
 
 ### Video format
