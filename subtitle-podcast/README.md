@@ -39,7 +39,7 @@ https://www.python.org/ftp/python/3.13.11/python-3.13.11-amd64.exe
 
 Be sure to check "Add to Path" during installation
 
-![Python install window](.\python-path.png)
+![Python install window](python-path.png)
 
 ### Install Whisperx
 
@@ -68,7 +68,7 @@ pip.exe install whisperx
 
 If you have it right, your path should look something like this with a different username of course:
 
-![Path window](.\ffmpeg-path.png)
+![Path window](ffmpeg-path.png)
 
 Once confirmed, click "OK" on all the windows.
 
@@ -98,7 +98,7 @@ For example, if your files are in a folder called "pods"
 pods\
 ---- episode01.mp3
 ---- episode01.jpg
----- .\subtitle-podcast.ps1
+---- subtitle-podcast.ps1
 ```
 
 Only ".png" and ".jpg" extentions are allowed since I'm lazy.
